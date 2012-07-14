@@ -37,7 +37,6 @@ com.micronautics.dependencyReport.DependencyReport.dependencyReportSettings
         1. Look for the section starting with `object XXXX extends Build {`
 
         1. Add this line below it:
-
 ````
 import com.micronautics.dependencyReport.DependencyReport._
 ````
