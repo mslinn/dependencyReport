@@ -35,7 +35,10 @@ $ sbt dependency-report
 $ sbt compile:dependency-report
 $ sbt test:dependency-report
 $ sbt
-dependency-report
+[info] Loading global plugins from /home\mslinn/.sbt/plugins
+[info] Loading project definition from /work/myProject/project
+[info] Set current project to myProject (in build file:/work/myProject/)
+> dependency-report
 
 ````
 
