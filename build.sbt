@@ -1,6 +1,6 @@
 sbtPlugin     := true
 
-nam	          := "dependencyReport"
+name          := "dependencyReport"
 
 organization  := "com.micronautics"
 
