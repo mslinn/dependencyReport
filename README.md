@@ -41,11 +41,13 @@ com.micronautics.dependencyReport.DependencyReport.dependencyReportSettings
 import com.micronautics.dependencyReport.DependencyReport._
 ````
 
-        1. Look for the line like this inside the same section: `lazy val YYYY = Project(`
+        1. Look for the line(s) like this inside the same section: `lazy val YYYY = Project(`
 
-        1. Concatenate the plug-in's tasks and settings with the project's other tasks and settings.
-           The plug-in's tasks and settings are defined in `dependencyReportSettings`.
-           The end result should look something like this:
+        1. Do the following for each `Project` definition
+
+            1. Concatenate the plug-in's tasks and settings with the project's other tasks and settings.
+               The plug-in's tasks and settings are defined in `dependencyReportSettings`.
+               The end result should look something like this:
 
 ````
 lazy val YYYY = Project(
