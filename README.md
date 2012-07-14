@@ -29,9 +29,14 @@ com.micronautics.dependencyReport.DependencyReport.dependencyReportSettings
 ````
 This adds the tasks `compile:dependency-report` and `test:dependency-report`.
 
- 1. Use the plug-in this way:
+ 1. Use the plug-in any of these ways:
 ````
-sbt compile:dependency-report
+$ sbt dependency-report
+$ sbt compile:dependency-report
+$ sbt test:dependency-report
+$ sbt
+dependency-report
+
 ````
 
 ## Sample Output
