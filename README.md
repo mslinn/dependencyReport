@@ -53,13 +53,11 @@ lazy val YYYY = Project(
            The plug-in's tasks and settings are defined in `dependencyReportSettings`.
            The end result should look something like this:
 
-````
-lazy val YYYY = Project(
-  id = "yyyy",
-  base = file("."),
-  settings = defaultSettings ++ dependencyReportSettings ++ Seq(libraryDependencies ++= Dependencies.yyyyDeps)
-)
-````
+        lazy val YYYY = Project(
+          id = "yyyy",
+          base = file("."),
+          settings = defaultSettings ++ dependencyReportSettings ++ Seq(libraryDependencies ++= Dependencies.yyyyDeps)
+        )
 
  1. Use the plug-in any of these ways:
 ````
