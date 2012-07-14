@@ -1,1 +1,13 @@
 target
+.idea_modules/
+.idea/
+target/
+*~
+.classpath
+.cache
+.project
+.settings/
+*.iml
+*.stackdump
+project/target/
+
