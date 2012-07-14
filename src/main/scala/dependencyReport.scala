@@ -11,7 +11,7 @@ object DependencyReport extends Plugin {
   lazy val unscopedSettings: Seq[Setting[_]] = Seq(
     dependencyReport <<= (externalDependencyClasspath in Compile, streams) map {
       (cp: Seq[Attributed[File]], streams) =>
-         val report = cp.map {
+         val report: String = cp.map {
            attributed =>
              attributed.get(Keys.moduleID.key) match {
                case Some(moduleId) => "%-40s %-20s %-10s %-10s".format(
@@ -25,7 +25,7 @@ object DependencyReport extends Plugin {
                  attributed.data.getAbsolutePath
              }
          }.mkString("\n")
-       println(report)
+       println("\n" + report.split("\n").length + " dependencies:\n" + report + "\n")
        report
     }
   )
