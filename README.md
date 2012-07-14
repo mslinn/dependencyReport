@@ -27,7 +27,7 @@ addSbtPlugin("com.micronautics" % "dependencyreport" % "0.1.0-SNAPSHOT")
     The new tasks are `compile:dependency-report` and `test:dependency-report`.
     Perform one of the following two steps.
 
-    1. If your project has a top-level `build.sbt`, add this anywhere in that file (remember that file requires double-spacing):
+    1. If your project has a top-level `build.sbt`, add the following line anywhere in that file (remember that file requires double-spacing):
 ````
 com.micronautics.dependencyReport.DependencyReport.dependencyReportSettings
 ````
@@ -52,7 +52,7 @@ lazy val YYYY = Project(
         1. Concatenate the plug-in's tasks and settings with the project's other tasks and settings.
            The plug-in's tasks and settings are defined in `dependencyReportSettings`.
            The end result should look something like this:
-           
+
 ````
 lazy val YYYY = Project(
   id = "yyyy",
@@ -62,6 +62,7 @@ lazy val YYYY = Project(
 ````
 
  1. Use the plug-in any of these ways:
+ 
 ````
 $ sbt dependency-report
 $ sbt compile:dependency-report
