@@ -73,6 +73,7 @@ $ sbt
 ````
 
 ## Sample Output
+Output is sorted.
 
 ````
 35 dependencies:
