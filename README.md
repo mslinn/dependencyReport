@@ -52,6 +52,7 @@ lazy val YYYY = Project(
         1. Concatenate the plug-in's tasks and settings with the project's other tasks and settings.
            The plug-in's tasks and settings are defined in `dependencyReportSettings`.
            The end result should look something like this:
+           
 ````
   lazy val YYYY = Project(
     id = "yyyy",
