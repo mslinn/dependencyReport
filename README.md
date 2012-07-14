@@ -39,7 +39,6 @@ $ sbt
 [info] Loading project definition from /work/myProject/project
 [info] Set current project to myProject (in build file:/work/myProject/)
 > dependency-report
-
 ````
 
 ## Sample Output
