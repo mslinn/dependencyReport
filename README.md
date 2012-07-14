@@ -41,10 +41,12 @@ object XXXX extends Build {
 ````
 import com.micronautics.dependencyReport.DependencyReport._
 ````
+
        i. Look for the line like this inside the same section:
 ````
 lazy val YYYY = Project(
 ````
+
        i. Concatenate the plug-in's tasks and settings with the project's other tasks and settings.
     The plug-in's tasks and settings are defined in `dependencyReportSettings`.
     The end result should look something like this:
