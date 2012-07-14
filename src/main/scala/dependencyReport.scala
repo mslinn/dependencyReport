@@ -1,4 +1,5 @@
 import sbt._
+import sbt.Keys._
 
 object DependencyReport extends Plugin {
   lazy val dependencyReport = TaskKey[String]("dependency-report")
