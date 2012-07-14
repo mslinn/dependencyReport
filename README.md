@@ -20,7 +20,7 @@ sbt compile publish-local
 
  1. Add this to your project's `project/plugins.sbt`:
 ````
-addSbtPlugin("com.micronautics" % "dependencyReport" % "0.1.0-SNAPSHOT")
+addSbtPlugin("com.micronautics" % "dependencyreport" % "0.1.0-SNAPSHOT")
 ````
 
  1. Add this setting to your project's `build.sbt`:
