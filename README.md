@@ -6,7 +6,7 @@ Cheerleading, documentation and 2% code by Mike Slinn.
 
 Daily usage by millions.
 
-## Usage
+## Installation
 
  1. Clone this project:
 ````
@@ -61,14 +61,16 @@ lazy val YYYY = Project(
 )
 ````
 
- 1. Use the plug-in any of these ways:
- 
+## Usage
+
+Use this plug-in any of the following ways:
+
 ````
 $ sbt dependency-report
 $ sbt compile:dependency-report
 $ sbt test:dependency-report
 $ sbt
-[info] Loading global plugins from /home\mslinn/.sbt/plugins
+[info] Loading global plugins from /home/mslinn/.sbt/plugins
 [info] Loading project definition from /work/myProject/project
 [info] Set current project to myProject (in build file:/work/myProject/)
 > dependency-report
