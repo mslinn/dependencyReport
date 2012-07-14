@@ -44,7 +44,7 @@ $ sbt
 ## Sample Output
 
 ````
-sbt dependency-report
+11 dependencies:
 org.scala-lang                           scala-library        2.9.1-1
 com.typesafe.akka                        akka-actor           2.0.1
 com.typesafe.akka                        akka-agent           2.0.1
