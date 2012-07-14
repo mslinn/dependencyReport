@@ -32,22 +32,17 @@ addSbtPlugin("com.micronautics" % "dependencyreport" % "0.1.0-SNAPSHOT")
 com.micronautics.dependencyReport.DependencyReport.dependencyReportSettings
 ````
 
-    1. If your project has a top-level `project/build.scala`:
+    1. If your project has a top-level `project/build.scala` (this file is not double-spaced):
 
-        1. Look for the section starting with:
-````
-object XXXX extends Build {
-````
+        1. Look for the section starting with `object XXXX extends Build {`
 
         1. Add this line below it:
+
 ````
 import com.micronautics.dependencyReport.DependencyReport._
 ````
 
-        1. Look for the line like this inside the same section:
-````
-lazy val YYYY = Project(
-````
+        1. Look for the line like this inside the same section: `lazy val YYYY = Project(`
 
         1. Concatenate the plug-in's tasks and settings with the project's other tasks and settings.
            The plug-in's tasks and settings are defined in `dependencyReportSettings`.
