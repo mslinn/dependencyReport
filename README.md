@@ -25,7 +25,8 @@ addSbtPlugin("com.micronautics" % "dependencyreport" % "0.1.0-SNAPSHOT")
 
  1. This step adds the tasks defined in the plug-in to your SBT project.
  The new tasks are `compile:dependency-report` and `test:dependency-report`.
- Perform on of the following two steps.
+ Perform one of the following two steps.
+
     a. If your project has a top-level `build.sbt`, add this anywhere in that file (remember that file requires double-spacing):
 ````
 com.micronautics.dependencyReport.DependencyReport.dependencyReportSettings
