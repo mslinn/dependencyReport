@@ -1,7 +1,7 @@
 An sbt plugin to list all dependencies of an SBT project.
 
-99.9% by Jason Zaugg
+99.9% written by Jason Zaugg.
 
-Cheerleading by Mike Slinn
+Cheerleading and 1% code by Mike Slinn.
 
 Daily usage by millions.
