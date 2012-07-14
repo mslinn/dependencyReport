@@ -27,7 +27,6 @@ addSbtPlugin("com.micronautics" % "dependencyReport" % "0.1.0-SNAPSHOT")
 ````
 com.micronautics.dependencyReport.DependencyReport.dependencyReportSettings
 ````
-
 This adds the tasks `compile:dependency-report` and `test:dependency-report`.
 
  1. Use the plug-in this way:
