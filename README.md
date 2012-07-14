@@ -75,16 +75,40 @@ $ sbt
 ## Sample Output
 
 ````
-11 dependencies:
-org.scala-lang                           scala-library        2.9.1-1
-com.typesafe.akka                        akka-actor           2.0.1
-com.typesafe.akka                        akka-agent           2.0.1
-org.scala-tools                          scala-stm_2.9.1      0.5
-com.github.scala-incubator.io            scala-io-core_2.9.1  0.3.0
-com.github.jsuereth.scala-arm            scala-arm_2.9.1      1.1
-com.github.scala-incubator.io            scala-io-file_2.9.1  0.3.0
-org.apache.httpcomponents                httpclient           4.1.2
-org.apache.httpcomponents                httpcore             4.1.2
-commons-logging                          commons-logging      1.1.1
-commons-codec                            commons-codec        1.4
+35 dependencies:
+ch.qos.logback                      logback-classic                1.0.0
+ch.qos.logback                      logback-core                   1.0.0
+com.amazonaws                       aws-java-sdk                   1.1.8
+com.google.protobuf                 protobuf-java                  2.4.1
+com.novus                           salat-core_2.9.1               1.9.0
+com.novus                           salat-util_2.9.1               1.9.0
+com.thoughtworks.paranamer          paranamer                      2.4.1
+com.typesafe.akka                   akka-actor                     2.0.1
+commons-codec                       commons-codec                  1.6
+commons-httpclient                  commons-httpclient             3.1
+commons-io                          commons-io                     2.1
+commons-logging                     commons-logging                1.1.1
+javax.activation                    activation                     1.1
+javax.mail                          mail                           1.4.5
+joda-time                           joda-time                      1.6.2
+net.liftweb                         lift-json_2.9.1                2.5-SNAPSHOT
+org.apache.solr                     solr-solrj                     3.6.0
+org.codehaus.jackson                jackson-core-asl               1.9.8
+org.codehaus.woodstox               wstx-asl                       3.2.7
+org.mongodb                         casbah-commons_2.9.1           2.4.1
+org.mongodb                         casbah-core_2.9.1              2.4.1
+org.mongodb                         casbah-gridfs_2.9.1            2.4.1
+org.mongodb                         casbah-query_2.9.1             2.4.1
+org.mongodb                         casbah-util_2.9.1              2.4.1
+org.mongodb                         mongo-java-driver              2.8.0
+org.scala-lang                      scala-compiler                 2.9.1
+org.scala-lang                      scala-library                  2.9.1
+org.scala-lang                      scalap                         2.9.1
+org.scala-tools.time                time_2.9.1                     0.5
+org.scalaj                          scalaj-collection_2.9.1        1.2
+org.slf4j                           jcl-over-slf4j                 1.6.1
+org.slf4j                           slf4j-api                      1.6.4
+org.specs2                          specs2-scalaz-core_2.9.1       6.0.1
+org.specs2                          specs2_2.9.1                   1.7.1
+stax                                stax-api                       1.0.1
 ````

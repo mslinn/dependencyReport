@@ -14,7 +14,7 @@ object DependencyReport extends Plugin {
          val report: String = cp.map {
            attributed =>
              attributed.get(Keys.moduleID.key) match {
-               case Some(moduleId) => "%-40s %-20s %-10s %-10s".format(
+               case Some(moduleId) => "%-35s %-30s %-10s %-10s".format(
                  moduleId.organization,
                  moduleId.name,
                  moduleId.revision,
@@ -24,7 +24,7 @@ object DependencyReport extends Plugin {
                case None => // unmanaged JAR
                  attributed.data.getAbsolutePath
              }
-         }.mkString("\n")
+         }.sortWith(_ < _).mkString("\n")
        println("\n" + report.split("\n").length + " dependencies:\n" + report + "\n")
        report
     }
