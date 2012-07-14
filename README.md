@@ -30,8 +30,9 @@ addSbtPlugin("com.micronautics" % "dependencyreport" % "0.1.0-SNAPSHOT")
 ````
 com.micronautics.dependencyReport.DependencyReport.dependencyReportSettings
 ````
+
     a. If your project has a top-level `project/build.scala`:
-    i. Look for the section starting with:
+       i. Look for the section starting with:
 ````
 object XXXX extends Build {
 ````
