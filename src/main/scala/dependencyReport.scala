@@ -8,13 +8,13 @@ object DependencyReport extends Plugin {
 
   val dependencyReportSettings: Seq[Setting[_]] = inConfig(Compile)(unscopedSettings) ++ inConfig(Test)(unscopedSettings)
 
-  val unscopedSettings: Seq[Setting[_]] = Seq(
+  lazy val unscopedSettings: Seq[Setting[_]] = Seq(
     dependencyReport <<= (externalDependencyClasspath in Compile, streams) map {
       (cp: Seq[Attributed[File]], streams) =>
          val report = cp.map {
            attributed =>
              attributed.get(Keys.moduleID.key) match {
-               case Some(moduleId) => "%40s %20s %10s %10s".format(
+               case Some(moduleId) => "%-40s %-20s %-10s %-10s".format(
                  moduleId.organization,
                  moduleId.name,
                  moduleId.revision,
@@ -25,7 +25,7 @@ object DependencyReport extends Plugin {
                  attributed.data.getAbsolutePath
              }
          }.mkString("\n")
-       streams.log.info(report)
+       println(report)
        report
     }
   )
