@@ -10,7 +10,7 @@ Daily usage by millions.
 
  1. Clone this project:
 ````
-git clone git@github.com/mslinn/dependencyReport.git
+git clone git@github.com:mslinn/dependencyReport.git
 ````
 
  1. Compile and publish-local:
